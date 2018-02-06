@@ -1,0 +1,30 @@
+/* Подключаем картинку фона */
+body{
+	background-image: url("../img/backgr.jpg")
+}
+
+/* Цвет даты и времени */
+a{
+	color: #583b11;
+}
+
+/* Придадим стили контейнеру формы */
+.container{ 
+	width: 450px;
+	height: 500px;
+	background-color: rgba(193, 164, 94, 0.8);
+	margin: 250px auto 0 auto;
+	text-align: center;
+	box-shadow: 0 -6px 0 #e4cd97;
+	border-radius: 0 0 4px 4px;
+}
+/* Опишем стили для логотипа(C3PO) */
+.container img{
+	width: 120px;
+	height: 120px;
+	margin: -60px 0 30px 0;
+	border: 5px solid #c1a45e;
+	border-radius: 50%;
+	box-shadow: 0 -6px 0 #e4cd97;
+}
+

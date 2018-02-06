@@ -1,0 +1,115 @@
+/* Подключаем картинку фона */
+body{
+	background-image: url("../img/backgr.jpg")
+}
+
+/* Цвет даты и времени */
+a{
+	color: #583b11;
+}
+
+/* Придадим стили контейнеру формы */
+.container{ 
+	width: 450px;
+	height: 500px;
+	background-color: rgba(193, 164, 94, 0.8);
+	margin: 250px auto 0 auto;
+	text-align: center;
+	box-shadow: 0 -6px 0 #e4cd97;
+	  -webkit-box-shadow: 0 -6px 0 #e4cd97;
+	border-radius: 0 0 4px 4px;
+	  -webkit-border-radius: 0 0 4px 4px;
+}
+/* Опишем стили для логотипа(C3PO) */
+.container img{
+	width: 120px;
+	height: 120px;
+	margin: -60px 0 30px 0;
+	border: 5px solid #c1a45e;
+	border-radius: 50%;
+	  -webkit-border-radius: 50%;
+	box-shadow: 0 -6px 0 #e4cd97;
+	  -webkit-box-shadow: 0 -6px 0 #e4cd97;
+}
+
+/* Оформляем imput для логина и пароля. Отберем их по атрибутам */
+input[type="text"], input[type="password"]{
+	width: 300px;
+	height: 50px;
+	font-size: 18px;
+	margin-bottom: 25px;
+	border-radius: 4px;
+      -webkit-border-radius: 4px;
+	padding-left: 45px;
+	outline-color: #583b11;
+}
+
+/* Опишем стили для кнопки */
+.a-submit{
+	padding: 13px 30px;
+	margin: 5px 0 20px 0;
+	font-size: 15px;
+	color: #fff;
+	background-color: #583b11; 
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+	overflow: hidden;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-box-shadow: 4px 4px 0px 0px #e4cd97;
+}
+
+/* Опишем стили для кнопки при наведении */
+.a-submit:hover{
+	width: 110px;
+	transition: all 0.5s;
+	background: #8c5d19;
+	color: #fff; 
+}
+/* Иконка для поля Email */
+.fa-envelope::before{
+	position: absolute;
+	padding: 10px 0 0 7px;
+}
+
+/* Иконка для поля Password */
+.fa-lock:nth-child(2)::before{
+	position: absolute;
+	padding: 10px 0 0 7px;
+}
+
+/* Меняем цвет миниатюр при наведении */
+.fa-envelope:hover::before{
+	color: #583b11;
+	transition: all 0.3s ease;
+}
+.fa-lock:hover::before{
+	color: #583b11;
+	transition: all 0.3s ease;
+}
+
+/* Cтили для input при наведении */
+.fa-envelope input:hover{
+box-shadow: 0 0 7px 4px rgba(140, 93, 25, 1);
+}
+.fa-lock input:hover{
+box-shadow: 0 0 7px 4px rgba(140, 93, 25, 1);
+}
+
+
+
+/* Cтиль для ошибок */
+input.error, textarea.error, select.error, div.error{
+		border: 2px solid red !important;
+	}
+
+	input[type='text'].error, input[type="password"].error {
+		border: 1px solid #e1e1e1;
+		border-top: 1px solid #b0aa9b; 
+		border-left: 1px solid #b0aa9b; 
+		background: #ff9582;
+	}
